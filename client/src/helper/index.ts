@@ -1,6 +1,6 @@
 import { Chain } from '@rainbow-me/rainbowkit';
 import { uxuyWallet } from '@/wallets/uxuyWallet';
-import { opBNBTestnet, mainnet,flowTestnet } from 'wagmi/chains';
+import { ancient8Sepolia } from 'wagmi/chains';
 import {
   connectorsForWallets,
 } from '@rainbow-me/rainbowkit';
@@ -11,7 +11,7 @@ import {
   walletConnectWallet,
   okxWallet,
 } from '@rainbow-me/rainbowkit/wallets';
-const chains: readonly [Chain, ...Chain[]] = [mainnet, opBNBTestnet,flowTestnet];
+const chains: readonly [Chain, ...Chain[]] = [ancient8Sepolia];
 const connectors = connectorsForWallets(
   [
     {
@@ -29,8 +29,6 @@ export const config = createConfig({
   connectors,
   chains: chains,
   transports: {
-    [opBNBTestnet.id]: http('https://opbnb-testnet-rpc.bnbchain.org/'),
-    [mainnet.id]: http('https://bsc-dataseed.binance.org/'),
-    [flowTestnet.id]: http('https://testnet.evm.nodes.onflow.org/'),
+    [ancient8Sepolia.id]: http('https://rpcv2-testnet.ancient8.gg'),
   },
 });
