@@ -349,8 +349,8 @@ export const mainContractABI =[
     "type": "function"
   }
 ];
-export const mainContractAddress = '0x4d3cf8661b9b66e0d05d717db7bf41a0c6767fcd';
-export const tokenAddress = '0xE7Af399C6fEc10DfC47029A28C71228D6E2fA978';
+export const mainContractAddress = '0xe6d602De78a7a46F072B117A99b7e45640aB5E7C';
+export const tokenAddress = '0xBFff78BB02925E4D8671D0d90B2a6330fcAedd87';
 
 export const tokenAbi =[
 	{
