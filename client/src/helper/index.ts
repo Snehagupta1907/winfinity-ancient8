@@ -16,7 +16,7 @@ const connectors = connectorsForWallets(
   [
     {
       groupName: 'Recommended',
-      wallets: [uxuyWallet, okxWallet, rainbowWallet, walletConnectWallet],
+      wallets: [ okxWallet, rainbowWallet, walletConnectWallet],
     },
   ],
   {
